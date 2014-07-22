@@ -19,13 +19,13 @@ class VerifyLogin extends CI_Controller {
    if($this->form_validation->run() == FALSE)
    {
      //Field validation failed.&nbsp; User redirected to login page
-    $data['main_cont'] = 'clientesAppLogin';
-    $this->load->view('includes/template_mascotasApp', $data);
+    $data['main_cont'] = 'login';
+    $this->load->view('includes/template_login', $data);
    }
    else
    {
      //Go to private area
-     redirect('clientesAppLogin', 'refresh');
+     redirect('home', 'refresh');
    }
 
  }
@@ -53,7 +53,7 @@ class VerifyLogin extends CI_Controller {
    }
    else
    {
-     $this->form_validation->set_message('check_database', 'Usuario y/o Contraseña incorrectos');
+     $this->form_validation->set_message('check_database', '<div class="alert alert-danger alert-dismissible animated fadeInDown" role="alert"><button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>Usuario y/o Contraseña incorrectos</div>');
      return false;
    }
  }

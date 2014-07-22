@@ -16,7 +16,6 @@
 */
 $config['base_url']	= 'http://localhost:8888/SFL-Admin';
 
-
 /*
 |--------------------------------------------------------------------------
 | Index File
@@ -58,7 +57,7 @@ $config['uri_protocol']	= 'AUTO';
 | http://codeigniter.com/user_guide/general/urls.html
 */
 
-$config['url_suffix'] = '.html';
+$config['url_suffix'] = '';
 
 /*
 |--------------------------------------------------------------------------
@@ -110,7 +109,6 @@ $config['enable_hooks'] = FALSE;
 $config['subclass_prefix'] = 'MY_';
 
 
-
 /*
 |--------------------------------------------------------------------------
 | Allowed URL Characters
@@ -128,7 +126,8 @@ $config['subclass_prefix'] = 'MY_';
 | DO NOT CHANGE THIS UNLESS YOU FULLY UNDERSTAND THE REPERCUSSIONS!!
 |
 */
-$config['permitted_uri_chars'] = 'a-z 0-9~%\.\:_\-';
+$config['permitted_uri_chars'] = 'a-z 0-9~%.:_\-';
+
 
 /*
 |--------------------------------------------------------------------------

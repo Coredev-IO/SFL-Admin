@@ -48,8 +48,8 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-/*
 
+/*
 $db['default']['hostname'] = 'localhost';
 $db['default']['username'] = 'coredevc_user1';
 $db['default']['password'] = '22120422';
@@ -67,11 +67,10 @@ $db['default']['autoinit'] = TRUE;
 $db['default']['stricton'] = FALSE;
 */
 
-
 $db['default']['hostname'] = 'localhost';
 $db['default']['username'] = 'root';
 $db['default']['password'] = 'root';
-$db['default']['database'] = 'petCloud';
+$db['default']['database'] = 'FRP';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;

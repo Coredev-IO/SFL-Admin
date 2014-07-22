@@ -38,23 +38,9 @@
 |
 */
 
-$route['default_controller'] = "index";
+$route['default_controller'] = "home";
 $route['404_override'] = 'Notfound';
 
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */
-
-
-/*
-|--------------------------------------------------------------------------
-| Personalizados
-|--------------------------------------------------------------------------
-
-|
-*/
-$route['mail/(:any)'] = 'email/index/$1';
-$route['mailVet/(:any)'] = 'email/vet/$1';
-$route['maps'] = 'mascotas/mapas';
-
-

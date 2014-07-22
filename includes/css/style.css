@@ -1,0 +1,67 @@
+/***************  MAPAS  ****************/
+#map {
+    height: 350px;
+    width: 100%;
+    margin: auto;
+}
+
+/* RESPONSIVE CSS */
+@media (max-width: 979px) {
+
+            #map {
+     height: 450px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 20px;
+
+}
+
+
+.btn.btn-large {
+  font-size: 12.996px;
+  /* 17px */
+
+  line-height: 20px;
+  padding: 1px 18px 1px;
+}
+
+}
+
+@media (max-width: 767px) {
+
+   #map {
+     height: 250px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 20px;
+
+
+
+.btn.btn-large {
+  font-size: 8.996px;
+  /* 17px */
+
+  line-height: 13px;
+  padding: 1px 18px 1px;
+}
+
+
+
+}
+
+
+/***************  END MAPAS  ****************/
+
+
+
+.blanco{
+    color: #ffffff;
+}
+
+
+
+
+.gridcrud{
+
+  width: 50px;
+}
