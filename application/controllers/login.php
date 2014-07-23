@@ -17,8 +17,8 @@ class Login extends CI_Controller {
     {
       //If no session, redirect to login page
       $this->load->helper(array('form'));//Carga las sesiones
-      $data['main_cont'] = 'home';
-      $this->load->view('includes/template', $data);
+      $data['main_cont'] = 'login';
+      $this->load->view('includes/template_login', $data);
     }
 
   }
