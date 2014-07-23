@@ -10,23 +10,36 @@ class VerifyLogin extends CI_Controller {
 
  function index()
  {
-   //This method will have the credentials validation
-   $this->load->library('form_validation');
 
-   $this->form_validation->set_rules('username', 'Username', 'trim|required|xss_clean');
-   $this->form_validation->set_rules('password', 'Password', 'trim|required|xss_clean|callback_check_database');
 
-   if($this->form_validation->run() == FALSE)
+   if($this->session->userdata('logged_in'))
    {
-     //Field validation failed.&nbsp; User redirected to login page
-    $data['main_cont'] = 'login';
-    $this->load->view('includes/template_login', $data);
+     redirect('home', 'refresh');
    }
    else
    {
-     //Go to private area
-     redirect('home', 'refresh');
+     //This method will have the credentials validation
+     $this->load->library('form_validation');
+
+     $this->form_validation->set_rules('username', 'Username', 'trim|required|xss_clean');
+     $this->form_validation->set_rules('password', 'Password', 'trim|required|xss_clean|callback_check_database');
+
+     if($this->form_validation->run() == FALSE)
+     {
+       //Field validation failed.&nbsp; User redirected to login page
+      $data['main_cont'] = 'login';
+      $this->load->view('includes/template_login', $data);
+     }
+     else
+     {
+       //Go to private area
+       redirect('home', 'refresh');
+     }
+
    }
+
+
+
 
  }
 

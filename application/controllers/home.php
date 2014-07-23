@@ -18,8 +18,9 @@ class Home extends CI_Controller {
    }
    else
    {
-     //If no session, redirect to login page
-     redirect('login', 'refresh');
+     $this->load->helper(array('form'));//Carga las sesiones
+     $data['main_cont'] = 'login';
+     $this->load->view('includes/template_login', $data);
    }
  }
 
@@ -27,7 +28,9 @@ class Home extends CI_Controller {
  {
    $this->session->unset_userdata('logged_in');
    session_destroy();
-   redirect('login', 'refresh');
+   $this->load->helper(array('form'));//Carga las sesiones
+   $data['main_cont'] = 'login';
+   $this->load->view('includes/template_login', $data);
  }
 
 }
