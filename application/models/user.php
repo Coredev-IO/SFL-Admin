@@ -24,6 +24,7 @@ Class User extends CI_Model
  }
 
 
+
 function obtId($username)
 {
    /*Obtinene solo el Id de usuario*/
@@ -45,16 +46,24 @@ function obtId($username)
 }
 
 
-function mostrarDatos()
-{
 
+
+//Obtiene Todas las vacantes
+function vacantes()
+{
+ /*Funcion para validar informacón de inicio de sesión*/
+
+  $this -> db -> select('id_vacante, vacante, empresa, descripcion, lugar, salario, horario, fecha, escolaridad, experiencia');
+  $this -> db -> from('vacantes');
+
+
+  $query = $this -> db -> get();
+
+
+    return $query->result();
 
 }
 
-function actDatos()
-{
-
-}
 
 }
 ?>
