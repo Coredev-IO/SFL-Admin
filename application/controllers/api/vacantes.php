@@ -30,7 +30,7 @@ class Vacantes extends REST_Controller
 
         if($result)
         {
-            $this->response($result, 200);
+            $this->response(array('success' => true,'vacantes' => $result), 200);
         }
 
         else
