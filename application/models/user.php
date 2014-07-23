@@ -25,7 +25,7 @@ Class User extends CI_Model
 
 
 function obtId($username)
-{ 
+{
    /*Obtinene solo el Id de usuario*/
    $this -> db -> select('id');
    $this -> db -> from('users');
@@ -41,7 +41,7 @@ function obtId($username)
    {
      return false;
    }
-   
+
 }
 
 
