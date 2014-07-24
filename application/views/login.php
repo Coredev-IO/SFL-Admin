@@ -15,7 +15,6 @@
                 <?php echo form_open( 'verifylogin'); ?>
 
 
-
                 <div class="login-form">
                     <div class="control-group">
                         <input type="text" class="form-control" value="" placeholder="Username" id="username" name="username" autofocus>

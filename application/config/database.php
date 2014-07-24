@@ -68,9 +68,9 @@ $db['default']['stricton'] = FALSE;
 */
 
 $db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'root';
-$db['default']['password'] = 'root';
-$db['default']['database'] = 'salesforce_aspirantes';
+$db['default']['username'] = 'coreotmf_admin2';
+$db['default']['password'] = '22120422';
+$db['default']['database'] = 'coreotmf_salesforce_aspirantes';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;

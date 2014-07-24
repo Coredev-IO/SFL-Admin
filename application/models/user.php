@@ -64,6 +64,23 @@ function vacantes()
 
 }
 
+//Obtiene Todas las vacantes
+function reclutadores()
+{
+ /*Funcion para validar informacón de inicio de sesión*/
+
+  $this -> db -> select('*');
+  $this -> db -> from('users');
+
+
+  $query = $this -> db -> get();
+
+
+    return $query->result();
+
+}
+
+
 
 }
 ?>
