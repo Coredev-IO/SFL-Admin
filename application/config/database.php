@@ -48,29 +48,27 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-
-/*
-$db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'coredevc_user1';
-$db['default']['password'] = '22120422';
-$db['default']['database'] = 'coredevc_AnimalApp';
-$db['default']['dbdriver'] = 'mysql';
-$db['default']['dbprefix'] = '';
-$db['default']['pconnect'] = TRUE;
-$db['default']['db_debug'] = TRUE;
-$db['default']['cache_on'] = FALSE;
-$db['default']['cachedir'] = '';
-$db['default']['char_set'] = 'utf8';
-$db['default']['dbcollat'] = 'utf8_general_ci';
-$db['default']['swap_pre'] = '';
-$db['default']['autoinit'] = TRUE;
-$db['default']['stricton'] = FALSE;
-*/
+// $db['default']['hostname'] = 'localhost';
+// $db['default']['username'] = 'coreotmf_admin2';
+// $db['default']['password'] = '22120422';
+// $db['default']['database'] = 'coreotmf_salesforce_aspirantes';
+// $db['default']['dbdriver'] = 'mysql';
+// $db['default']['dbprefix'] = '';
+// $db['default']['pconnect'] = TRUE;
+// $db['default']['db_debug'] = TRUE;
+// $db['default']['cache_on'] = FALSE;
+// $db['default']['cachedir'] = '';
+// $db['default']['char_set'] = 'utf8';
+// $db['default']['dbcollat'] = 'utf8_general_ci';
+// $db['default']['swap_pre'] = '';
+// $db['default']['autoinit'] = TRUE;
+// $db['default']['stricton'] = FALSE;
+//
 
 $db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'coreotmf_admin2';
-$db['default']['password'] = '22120422';
-$db['default']['database'] = 'coreotmf_salesforce_aspirantes';
+$db['default']['username'] = 'root';
+$db['default']['password'] = 'root';
+$db['default']['database'] = 'salesforce_aspirantes';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
