@@ -18,7 +18,7 @@ class Vacantes2 extends CI_Controller {
     if($this->session->userdata('logged_in'))
     {
 			$session_data = $this->session->userdata('logged_in');
-			if($session_data['tipo_user']==='A'){
+
 
 
 			      $this->form_validation->set_rules('vacante', 'vacante', 'required|max_length[250]');
@@ -77,9 +77,7 @@ class Vacantes2 extends CI_Controller {
 			          // Or whatever error handling is necessary
 			          }
 			        }
-						}else{
-							redirect('home');
-						}
+						
 
 			     }else{
 			        $this->load->helper(array('form'));//Carga las sesiones

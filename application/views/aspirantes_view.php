@@ -24,6 +24,8 @@
           <th>Apellido paterno</th>
           <th>Apellido materno</th>
           <th>Nombre</th>
+          <th>Telefono</th>
+          <th>Celular</th>
         </tr>
       </thead>
       <tbody>
@@ -39,6 +41,9 @@
                            echo '<td class="left-txt">'.strtoupper($user->paterno).'</td>';
                            echo '<td class="left-txt">'.strtoupper($user->materno).'</td>';
                            echo '<td class="left-txt">'.strtoupper($user->nombre).'</td>';
+                           echo '<td class="left-txt">'.strtoupper($user->tel_particular).'</td>';
+                           echo '<td class="left-txt">'.strtoupper($user->tel_movil).'</td>';
+
                            echo '</tr>';
                                                  }
                          ?>
