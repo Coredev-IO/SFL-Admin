@@ -4,7 +4,7 @@ $alertDiv = '<div class="alert alert-danger alert-dismissible animated fadeInDow
 
 $lang['required']			= $alertDiv."El campo de %s es necesario.</div>";
 $lang['isset']				= "The %s field must have a value.";
-$lang['valid_email']		= "The %s field must contain a valid email address.";
+$lang['valid_email']		= $alertDiv."El %s es incorrecto, verfique que sea una dirección válida.</div>";
 $lang['valid_emails']		= "The %s field must contain all valid email addresses.";
 $lang['valid_url']			= "The %s field must contain a valid URL.";
 $lang['valid_ip']			= "The %s field must contain a valid IP.";

@@ -1,23 +1,23 @@
-<?php 
+<?php
 
 Class Reclutadores extends CI_Model{
 
 
 
-  
+
 
 
      function insert_reclutador($datos){
         $data = array(
-                      'username' => $datos['username'],
-                      'password' => $datos['password'],
-                      'tipo_user' => $datos['tipo_user'],
-                      'Nombre' => $datos['Nombre'],
-                      'ApellidoP' => $datos['ApellidoP'],
-                      'ApellidoM' => $datos['ApellidoM'],
-                      'mail' => $datos['mail'],
-                      'telefono' => $datos['telefono'],
-                      'celular' => $datos['celular']
+                      'username' => $datos['username']
+                      // 'password' => $datos['password'],
+                      // 'tipo_user' => $datos['tipo_user'],
+                      // 'Nombre' => $datos['Nombre'],
+                      // 'ApellidoP' => $datos['ApellidoP'],
+                      // 'ApellidoM' => $datos['ApellidoM'],
+                      // 'mail' => $datos['mail'],
+                      // 'telefono' => $datos['telefono'],
+                      // 'celular' => $datos['celular']
                         );
        $this->db->insert('users',$data);
 
@@ -54,7 +54,7 @@ Class Reclutadores extends CI_Model{
            $this -> db -> from('users');
            $query = $this -> db -> get();
            return $query->result();
-           
+
          }
 
 
@@ -66,9 +66,9 @@ Class Reclutadores extends CI_Model{
        $this -> db -> from('users');
        $this->db->where('id',$id);
        $query = $this -> db -> get();
-        
+
        return $query->result();
-       
+
      }
 
 
@@ -80,4 +80,3 @@ Class Reclutadores extends CI_Model{
 
 /* End of file usuarios_mascotas.php */
 /* Location: ./application/models/usuarios_mascotas.php */
-

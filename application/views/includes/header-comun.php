@@ -11,9 +11,7 @@
     </div>
     <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
       <ul class="nav navbar-nav">
-        <li>
-          <a href="<?=base_url()?>index.php/reclutadores/"><i class="fa fa-users"></i> Usuarios</a>
-        </li>
+        
         <li>
           <a href="<?=base_url()?>index.php/aspirantes/"><i class="fa fa-book"></i> Aspirantes</a>
         </li>

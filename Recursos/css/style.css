@@ -66,3 +66,64 @@ h4{
 .img-top{
   margin-top: -13px;
 }
+
+
+.box-reclutadores{
+  background-color: #f3f3f3;
+  text-align: center;
+}
+
+.box-reclutadores i{
+  color: #6e95ae;
+}
+
+.box-reclutadores-big{
+  margin-top: 15px;
+}
+
+
+.right{
+  float: right;
+}
+
+.left-txt{
+  text-align: left;
+}
+
+.img-principal-home{
+
+  margin-top: 100px;
+}
+
+.img-principal-home img{
+  width: 90%;
+}
+
+.img-principal-home i{
+  font-size: 40px;
+  color: #6e95ae;
+  text-align: center;
+}
+
+.txt-principal-home{
+  margin-top: 20px;
+  padding: 20px;
+}
+
+
+
+.box-formularios{
+  background-color: #f5f5f5;
+  padding: 30px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  box-shadow: 0px 0px 7px #ccc;
+  margin-top: 20px;
+}
+
+
+footer{
+  margin-top: 160px;
+}

@@ -63,7 +63,7 @@ $active_record = TRUE;
 // $db['default']['swap_pre'] = '';
 // $db['default']['autoinit'] = TRUE;
 // $db['default']['stricton'] = FALSE;
-//
+
 
 $db['default']['hostname'] = 'localhost';
 $db['default']['username'] = 'root';

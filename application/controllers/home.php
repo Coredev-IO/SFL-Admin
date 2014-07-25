@@ -13,7 +13,13 @@ class Home extends CI_Controller {
    {
      $session_data = $this->session->userdata('logged_in');
      $data['username'] = $session_data['username'];
-     $data['main_cont'] = 'home';
+     $data['tipo_user'] = $session_data['tipo_user'];
+
+     if($session_data['tipo_user']==='A'){
+       $data['main_cont'] = 'home';
+    }else{
+      $data['main_cont'] = 'home2';
+    }
      $this->load->view('includes/template', $data);
    }
    else
@@ -32,6 +38,9 @@ class Home extends CI_Controller {
    $data['main_cont'] = 'login';
    $this->load->view('includes/template_login', $data);
  }
+
+
+
 
 }
 

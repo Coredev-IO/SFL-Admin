@@ -3,12 +3,23 @@
 <?php $this->load->view('includes/head') ?>
 
   <body>
-        <?php $this->load->view('includes/header'); ?>
+        <?php
+
+        if($tipo_user === 'A'){
+
+          $this->load->view('includes/header');
+        }else{
+          $this->load->view('includes/header-comun'); 
+        }
+
+
+
+        ?>
         <div class="container">
-        <?php 
+        <?php
             $this->load->view($main_cont, $username);
             $this->load->view('includes/footer');
-            $this->load->view('includes/js'); 
+            $this->load->view('includes/js');
         ?>
         </div>
   </body>
