@@ -187,6 +187,53 @@ function Usfl_cv_02a($id, $id_estado, $id_del_mun, $zona, $calle, $num_ext, $num
 }
 
 
+
+
+function sfl_cv_03($id){
+  $this -> db -> select('id_aspirante, id_cuenta, tel_particular, tel_movil, tel_oficina, tel_rec, twitter, facebook, linkedin, rfc, curp, no_imss, no_clinica');
+
+   $this -> db -> from('cat_aspirante');
+   $this -> db -> where('id_cuenta', $id);
+   $this-> db ->order_by('id_aspirante', 'DESC'); 
+  $this-> db ->limit(1);
+
+
+   $query = $this -> db -> get();
+
+   if($query -> num_rows() == 1)
+   {
+     return $query->result();
+   }
+   else
+   {
+     return false;
+   }
+
+}
+
+
+
+function Usfl_cv_03($id, $tel_particular, $tel_movil, $tel_oficina, $tel_rec, $twitter, $facebook, $linkedin, $rfc, $curp, $no_imss, $no_clinica){
+        $data = array(
+           'tel_particular' =>$tel_particular,
+           'tel_movil'=>$tel_movil, 
+           'tel_oficina'=>$tel_oficina, 
+           'tel_rec' =>$tel_rec, 
+           'twitter' =>$twitter, 
+           'facebook' =>$facebook, 
+           'linkedin' =>$linkedin, 
+           'rfc' =>$rfc, 
+           'curp' =>$curp, 
+           'no_imss' =>$no_imss, 
+           'no_clinica' =>$no_clinica
+        );
+        $this->db->where('id_cuenta', $id);
+        return $this->db->update('cat_aspirante', $data);
+}
+
+
+
+
 // function sfl_cv_02a($id){
 //   $this -> db -> select('id_aspirante, id_cuenta, id_estado, id_del_mun, zona, calle, num_ext, num_int, colonia, cp, tel_particular, tel_movil, tel_oficina, tel_rec, twitter, facebook, linkedin, rfc, curp, no_imss, no_clinica');
 //    $this -> db -> from('cat_aspirante');
@@ -243,6 +290,9 @@ function Usfl_cv_02a($id, $id_estado, $id_del_mun, $zona, $calle, $num_ext, $num
 //                 curp ='" . $curp . "',
 //                 no_imss ='" . $no_imss . "',
 //                 no_clinica ='" . $no_clinica . "'
+//                 
+//                 
+//                 
 //   cat_ref_persona 
 //                 id_ref,
 //               id_cuenta,

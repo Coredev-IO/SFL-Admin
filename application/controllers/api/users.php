@@ -103,4 +103,40 @@ class Users extends REST_Controller
 
 
 
+    function sfl_cv_03_post()
+    {
+      //Acceso a modelo para obtener datos
+      $this->load->model('user','',TRUE);
+      $id = $this->post('id');
+      $result = $this->user->sfl_cv_03($id);
+        if($result){$this->response(array('success' => true,'usuario' => $result), 200);}
+        else{$this->response(array('message' => 'No usuario'), 200);}
+    }
+
+  function Usfl_cv_03_post()
+    {
+      //Acceso a modelo para obtener datos
+      $this->load->model('user','',TRUE);
+
+      $id = $this->post('id');
+      $tel_particular= $this->post('tel_particular');
+      $tel_movil= $this->post('tel_movil');
+      $tel_oficina= $this->post('tel_oficina');
+      $tel_rec= $this->post('tel_rec');
+      $twitter= $this->post('twitter');
+      $facebook= $this->post('facebook');
+      $linkedin= $this->post('linkedin');
+      $rfc= $this->post('rfc');
+      $curp= $this->post('curp');
+      $no_imss= $this->post('no_imss');
+      $no_clinica= $this->post('no_clinica');
+
+      
+      $result = $this->user->Usfl_cv_03($id, $tel_particular, $tel_movil, $tel_oficina, $tel_rec, $twitter, $facebook, $linkedin, $rfc, $curp, $no_imss, $no_clinica);
+
+        if($result){$this->response(array('success' => true,'usuario' => $result), 200);}
+        else{$this->response(array('message' => 'No usuario'), 200);}
+    }
+
+
 }
