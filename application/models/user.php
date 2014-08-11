@@ -262,6 +262,25 @@ function cat_ref_persona($id){
 }
 
 
+
+function view_cat_ref_persona($id, $id_ref){
+  $this -> db -> select('*');
+  $this -> db -> from('cat_ref_persona');
+  $this -> db -> where('id_cuenta', $id);
+  $this -> db -> where('id_ref', $id_ref);
+
+  $this-> db ->order_by('id_ref', 'DESC'); 
+
+
+
+  $query = $this -> db -> get();
+
+  if($query -> num_rows() > 0){return $query->result();}
+  else{return false;}
+
+}
+
+
 //Actualiza  informacion cat_ref_persona
 function Ucat_ref_persona($id, $id_ref, $data){
   $this->db->where('id_cuenta', $id);

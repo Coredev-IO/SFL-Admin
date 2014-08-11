@@ -2,7 +2,7 @@
 <div class='row inicial'>
     <div class='col-md-12 col'>
         <center>
-            <img src="<?=base_url()?>Recursos/img/panel.png" alt="" width="250px" />
+            <img src="<?=base_url()?>Recursos/img/talent.jpg" alt="" width="250px" />
         </center>
     </div>
     <div class='col-md-4 col-md-offset-4'>

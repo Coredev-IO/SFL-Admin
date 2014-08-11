@@ -135,7 +135,29 @@ class Users extends REST_Controller
 
       if ($sess){
         $result = $this->user->cat_ref_persona($id);
-        if($result){$this->response(array('success' => true,'usuario' => $result), 200);}
+        if($result){$this->response(array('success' => true,'referencia' => $result), 200);}
+        else{$this->response(array('message' => 'No usuario'), 200);}
+      }else{
+        $this->response(array('message' => 'Inicie Session'), 200);
+      }
+    }
+
+
+     /*Ver taabla cat_ref_persona*/
+  function view_cat_ref_persona_post()
+    {
+      //Acceso a modelo para obtener datos
+      $this->load->model('user','',TRUE);
+      $id = $this->post('id');
+      $id_ref = $this->post('id_ref');
+      $session = $this->post('session');
+
+      /*Se revisa seision*/
+      $sess = $this->user->session($id, $session);
+
+      if ($sess){
+        $result = $this->user->view_cat_ref_persona($id, $id_ref);
+        if($result){$this->response(array('success' => true,'referencia' => $result), 200);}
         else{$this->response(array('message' => 'No usuario'), 200);}
       }else{
         $this->response(array('message' => 'Inicie Session'), 200);
@@ -220,7 +242,7 @@ class Users extends REST_Controller
 
       if ($sess){
         $result = $this->user->perf_exp($id);
-        if($result){$this->response(array('success' => true,'usuario' => $result), 200);}
+        if($result){$this->response(array('success' => true,'exp' => $result), 200);}
         else{$this->response(array('message' => 'No usuario'), 200);}
       }else{
         $this->response(array('message' => 'Inicie Session'), 200);
@@ -257,7 +279,6 @@ class Users extends REST_Controller
         $this->response(array('message' => 'Inicie Session'), 200);
       }
     }
-
 
 
 

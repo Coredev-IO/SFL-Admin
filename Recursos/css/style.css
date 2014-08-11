@@ -1,5 +1,5 @@
 body{
-  background-image:url('../img/patt.png');
+ /* background-image:url('../img/patt.png');*/
 }
 
 .inicial{
@@ -64,7 +64,7 @@ h4{
 
 
 .img-top{
-  margin-top: -13px;
+  margin-top: -2px;
 }
 
 
