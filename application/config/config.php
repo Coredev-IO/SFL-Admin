@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://localhost/SFL-Admin';
+$config['base_url']	= 'http://localhost:8888/SFL-Admin';
 
 /*
 |--------------------------------------------------------------------------
