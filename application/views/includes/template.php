@@ -14,13 +14,15 @@
 
 
 
+
         ?>
         <div class="container">
         <?php
-            $this->load->view($main_cont, $username);
+            $data['username'] = $username;
+            $this->load->view($main_cont, $data);
             $this->load->view('includes/footer');
             $this->load->view('includes/js');
         ?>
         </div>
-  </body>
+  </body>   
 </html>

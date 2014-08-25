@@ -1,3 +1,4 @@
+
  <div class="section-colored principal">
     <div class="container">
       <div class="row">
@@ -14,6 +15,25 @@
 <div class="container box-reclutadores-big">
 <div class="row">
 <div class="col-md-12">
+
+
+
+
+
+
+
+
+
+
+     <input type='text' name='buscador' placeholder="Buscar"></input><a class="btn btn-primary" href=""><i class="fa fa-search"></i> Buscar</a>
+    
+
+
+
+
+
+
+
     <div class="panel panel-default box-reclutadores animated fadeInUp">
 
 

@@ -6,7 +6,8 @@
 
 
         <div class="col-sm-6 col-md-4 col-lg-3">
-        <a href="<?=base_url()?>index.php/reclutadores2" id='btnCorreo' class="btn btn-primary right" >Nuevo Reclutador <i class="fa fa-user fa-lg"></i> </a>
+        <?php 
+        echo '<a type="button" href="'.base_url().'index.php/reclutadores2" class="btn btn-primary btn-acciones">Nuevo Reclutador <i class="fa fa-user fa-lg"></i></a>'; ?>
         </div>
 
       </div>
@@ -32,8 +33,10 @@
                                     echo '<br> Administrador <br>';
                                 }
                                 echo ''.$user->username.'<br><br>';
+                                echo '<a type="button" href="'.base_url().'index.php/reclutadores2/borrar/'.$user->id.'" class="btn btn-danger btn-acciones"><i class="fa fa-trash-o"></i> Borrar</a>&nbsp';
+                                echo '<a type="button" href="'.base_url().'index.php/reclutadores2/actualizar/'.$user->id.'" class="btn btn-primary btn-acciones"><i class="fa fa-edit"></i> Editar</a>';
 
-                                // echo '<a type="button" href="'.base_url().'index.php/'.$user->id.'" class="btn btn-primary">Consulta</a>';
+                                 // echo '<a type="button" href="'.base_url().'index.php/'.$user->id.'" class="btn btn-primary">Consulta</a>';
 
                           echo '</div></div></div>';
                          }

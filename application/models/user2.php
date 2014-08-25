@@ -30,6 +30,13 @@ class User2 extends CI_Model {
 	}
 
 
+	function UpForm($form_data, $id)
+	{	
+		$this->db->where('id', $id);
+		$this->db->update('users', $form_data);
+	}
+
+
 	function SaveFormVacantes($form_data)
 	{
 		$this->db->insert('vacantes', $form_data);
@@ -41,6 +48,31 @@ class User2 extends CI_Model {
 
 		return FALSE;
 	}
+
+	 function eliminarReclutador($id)
+    {
+        $this->db->where('id',$id);
+
+        if($this->db->delete('users')==TRUE){
+        	return TRUE;
+        }
+        else{
+        	return FALSE;
+        }
+    }
+
+
+    function consulta_reclutador($id)
+    {
+    	$this -> db -> select('*');
+   		$this -> db -> from('users');
+        $this->db->where('id',$id);
+
+        $query = $this -> db -> get();        	
+        return $query->result();
+       
+    }
+
 
 }
 ?>

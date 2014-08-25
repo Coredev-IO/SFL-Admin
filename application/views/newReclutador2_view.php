@@ -75,7 +75,10 @@ echo form_open('reclutadores2', $attributes); ?>
               </p>
 
               <p>
-                      <?php echo form_submit( 'submit', 'Aceptar'); ?>
+
+                      <?php 
+                        $attributes = array('class' => 'class="btn btn-primary"');
+                        echo form_submit( 'submit', 'Aceptar', $attributes['class']); ?>
               </p>
 
         </div>

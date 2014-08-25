@@ -15,7 +15,7 @@
           <a href="<?=base_url()?>index.php/reclutadores/"><i class="fa fa-users"></i> Usuarios</a>
         </li>
         <li>
-          <a href="<?=base_url()?>index.php/aspirantes/"><i class="fa fa-book"></i> Aspirantes</a>
+          <a href="<?=base_url()?>index.php/aspirantesView/"><i class="fa fa-book"></i> Aspirantes</a>
         </li>
         <li>
           <a href="<?=base_url()?>index.php/vacantes/"><i class="fa fa-briefcase"></i> Vacantes</a>
